@@ -42,6 +42,10 @@ DETAILS :
 2.	cleanCSVMailFile.py Clean the file to restrict number of words in each message
 3.	parse_csv_file_to_mail_columns.py prepare a structure csv file using the cleaned file from item #2 and include the POI indicator using the file poi_email_list.csv
 4.	Calculate_Negative_Words.py creates the final structured email file by add negative word column using the financial and legal negative word file LoughranMcDonald_Litigious.csv and LoughranMcDonald_Negative.csv
+
+
+
+
 1.After processing data Run the file EmailAnalysis.py This is depends on the below mentioned files
 1.	GetData.py gets data from cleaned CSV file
 2.	Prepare_Classification_Data.py prepares data for classification
