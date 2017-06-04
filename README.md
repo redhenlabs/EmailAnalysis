@@ -33,3 +33,23 @@ Modeling and Processing:
 7.  Execute subagent to plots output for regression and classification
 8.  Execute subagent to plots model complexity
 9.  Execute subagent to calculates model complexity
+
+
+
+DETAILS :
+
+1.	Download Enron email corpus (email.csv) from Kaggle https://www.kaggle.com/wcukierski/enron-email-dataset/downloads/emails.csv.zip and store in "inputs" directory
+2.	cleanCSVMailFile.py Clean the file to restrict number of words in each message
+3.	parse_csv_file_to_mail_columns.py prepare a structure csv file using the cleaned file from item #2 and include the POI indicator using the file poi_email_list.csv
+4.	Calculate_Negative_Words.py creates the final structured email file by add negative word column using the financial and legal negative word file LoughranMcDonald_Litigious.csv and LoughranMcDonald_Negative.csv
+1.After processing data Run the file EmailAnalysis.py This is depends on the below mentioned files
+1.	GetData.py gets data from cleaned CSV file
+2.	Prepare_Classification_Data.py prepares data for classification
+3.	Prepare_Regression_Data.py prepares data for regression
+4.	call_reg_class_models.py calls regression and classification models
+5.	dat_exploratory_plot.py plots exploratory data
+6.	Classification_Models.py all classification models
+7.	Regression_Models.py all regression models 8 classification_plot.py plots output for classification
+8.	Regression_Plot.py plots output for regression
+9.	PlotModelCcomplexity.py plots model complexity
+10.	LearnndPerfCalc.py calculates model complexity
